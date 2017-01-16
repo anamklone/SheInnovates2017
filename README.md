@@ -1,1 +1,7 @@
-# SheInnovates2017
+# She Innovates 2017
+
+Srilakshmi Sampath ([srs150@pitt.edu](mailto:s@pitt.edu))
+<br>
+Anastasia Klonowski ([amk226@pitt.edu](mailto:amk226@pitt.edu))
+
+## Running List of Ideas<br>
