@@ -29,6 +29,11 @@
 		F401A8861E33C0B00075A076 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F401A8851E33C0B00075A076 /* TutorialViewController.swift */; };
 		F401A8891E33C4470075A076 /* 6_Anjali.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F401A8871E33C4470075A076 /* 6_Anjali.jpg */; };
 		F401A88A1E33C4470075A076 /* 7_Anjali.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F401A8881E33C4470075A076 /* 7_Anjali.jpg */; };
+		F401A8901E3407B90075A076 /* 8_Anjali.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F401A88B1E3407B90075A076 /* 8_Anjali.jpg */; };
+		F401A8911E3407B90075A076 /* 9_Anjali.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F401A88C1E3407B90075A076 /* 9_Anjali.jpg */; };
+		F401A8921E3407B90075A076 /* 10_Anjali.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F401A88D1E3407B90075A076 /* 10_Anjali.jpg */; };
+		F401A8931E3407B90075A076 /* 11_Anjali.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F401A88E1E3407B90075A076 /* 11_Anjali.jpg */; };
+		F401A8941E3407B90075A076 /* 12_Anjali.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F401A88F1E3407B90075A076 /* 12_Anjali.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +63,11 @@
 		F401A8851E33C0B00075A076 /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		F401A8871E33C4470075A076 /* 6_Anjali.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6_Anjali.jpg; sourceTree = "<group>"; };
 		F401A8881E33C4470075A076 /* 7_Anjali.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7_Anjali.jpg; sourceTree = "<group>"; };
+		F401A88B1E3407B90075A076 /* 8_Anjali.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 8_Anjali.jpg; sourceTree = "<group>"; };
+		F401A88C1E3407B90075A076 /* 9_Anjali.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 9_Anjali.jpg; sourceTree = "<group>"; };
+		F401A88D1E3407B90075A076 /* 10_Anjali.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 10_Anjali.jpg; sourceTree = "<group>"; };
+		F401A88E1E3407B90075A076 /* 11_Anjali.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 11_Anjali.jpg; sourceTree = "<group>"; };
+		F401A88F1E3407B90075A076 /* 12_Anjali.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 12_Anjali.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,12 +125,17 @@
 				F401A8801E3365590075A076 /* 5_Anjali.jpg */,
 				F401A8871E33C4470075A076 /* 6_Anjali.jpg */,
 				F401A8881E33C4470075A076 /* 7_Anjali.jpg */,
-				F401A8751E3304960075A076 /* SwipeViewController.swift */,
-				81BA814A1A49DA1800E65899 /* AppDelegate.swift */,
-				81BA814C1A49DA1800E65899 /* ViewController.swift */,
+				F401A88B1E3407B90075A076 /* 8_Anjali.jpg */,
+				F401A88C1E3407B90075A076 /* 9_Anjali.jpg */,
+				F401A88D1E3407B90075A076 /* 10_Anjali.jpg */,
+				F401A88E1E3407B90075A076 /* 11_Anjali.jpg */,
+				F401A88F1E3407B90075A076 /* 12_Anjali.jpg */,
 				814C3AC61B69877600E307BB /* Main.storyboard */,
 				F401A8711E3300470075A076 /* Swipe.storyboard */,
 				F401A8771E3315E20075A076 /* Tutorial.storyboard */,
+				81BA814A1A49DA1800E65899 /* AppDelegate.swift */,
+				81BA814C1A49DA1800E65899 /* ViewController.swift */,
+				F401A8751E3304960075A076 /* SwipeViewController.swift */,
 				F401A8851E33C0B00075A076 /* TutorialViewController.swift */,
 			);
 			path = ParseStarterProject;
@@ -210,15 +225,20 @@
 			files = (
 				F401A88A1E33C4470075A076 /* 7_Anjali.jpg in Resources */,
 				814C3ACA1B69877600E307BB /* Main.storyboard in Resources */,
+				F401A8921E3407B90075A076 /* 10_Anjali.jpg in Resources */,
 				814C3ACB1B69877600E307BB /* Images.xcassets in Resources */,
 				F401A8721E3300470075A076 /* Swipe.storyboard in Resources */,
 				F401A8781E3315E30075A076 /* Tutorial.storyboard in Resources */,
 				F401A8841E3365590075A076 /* 5_Anjali.jpg in Resources */,
+				F401A8941E3407B90075A076 /* 12_Anjali.jpg in Resources */,
 				F401A8831E3365590075A076 /* 4_Anjali.jpg in Resources */,
 				F401A8821E3365590075A076 /* 3_Anjali.jpg in Resources */,
 				F401A8811E3365590075A076 /* 2_Anjali.jpg in Resources */,
 				F401A87A1E332BEF0075A076 /* stock-photo.jpg in Resources */,
+				F401A8901E3407B90075A076 /* 8_Anjali.jpg in Resources */,
+				F401A8931E3407B90075A076 /* 11_Anjali.jpg in Resources */,
 				F401A87C1E3335090075A076 /* 1_ Anjali.jpg in Resources */,
+				F401A8911E3407B90075A076 /* 9_Anjali.jpg in Resources */,
 				F401A8891E33C4470075A076 /* 6_Anjali.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
