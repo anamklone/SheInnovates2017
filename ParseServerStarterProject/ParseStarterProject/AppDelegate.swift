@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // MARK: - UIApplicationDelegate
     //--------------------------------------
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+    @nonobjc func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Enable storing and querying data from Local Datastore.
         // Remove this line if you don't want to use Local Datastore features or want to use cachePolicy.
         Parse.enableLocalDatastore()
@@ -31,7 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let parseConfiguration = ParseClientConfiguration(block: { (ParseMutableClientConfiguration) -> Void in
             ParseMutableClientConfiguration.applicationId = "myappid"
             ParseMutableClientConfiguration.clientKey = "mymasterkey"
-            ParseMutableClientConfiguration.server = "Your Server URL Here"
+            ParseMutableClientConfiguration.server = "ec2-54-144-234-55.compute-1.amazonaws.com/parse"
         })
         
         Parse.initialize(with: parseConfiguration)
@@ -39,7 +39,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         // ****************************************************************************
         // Uncomment and fill in with your Parse credentials:
-        // Parse.setApplicationId("your_application_id", clientKey: "your_client_key")
+        // Parse.setApplicationId("myappid", clientKey: "mymasterkey")
         //
         // If you are using Facebook, uncomment and add your FacebookAppID to your bundle's plist as
         // described here: https://developers.facebook.com/docs/getting-started/facebook-sdk-for-ios/
@@ -60,7 +60,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             // Track an app open here if we launch with a push, unless
             // "content_available" was used to trigger a background push (introduced in iOS 7).
             // In that case, we skip tracking here to avoid double counting the app-open.
-            /*
+            
             let preBackgroundPush = !application.responds(to: #selector(getter: UIApplication.backgroundRefreshStatus))
             let oldPushHandlerOnly = !self.responds(to: #selector(UIApplicationDelegate.application(_:didReceiveRemoteNotification:fetchCompletionHandler:)))
             var noPushPayload = false;
@@ -70,7 +70,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             if (preBackgroundPush || oldPushHandlerOnly || noPushPayload) {
                 PFAnalytics.trackAppOpened(launchOptions: launchOptions)
             }
- */
+ 
         }
 
         //
@@ -121,7 +121,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
 
-    func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: NSError) {
+    @nonobjc func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: NSError) {
         if error.code == 3010 {
             print("Push notifications are not supported in the iOS Simulator.\n")
         } else {
@@ -129,7 +129,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
 
-    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject]) {
+    @nonobjc func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject]) {
         PFPush.handle(userInfo)
         if application.applicationState == UIApplicationState.inactive {
             PFAnalytics.trackAppOpened(withRemoteNotificationPayload: userInfo)
