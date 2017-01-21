@@ -21,6 +21,7 @@
 		F401A8761E3304960075A076 /* SwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F401A8751E3304960075A076 /* SwipeViewController.swift */; };
 		F401A8781E3315E30075A076 /* Tutorial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F401A8771E3315E20075A076 /* Tutorial.storyboard */; };
 		F401A87A1E332BEF0075A076 /* stock-photo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F401A8791E332BEF0075A076 /* stock-photo.jpg */; };
+		F401A87C1E3335090075A076 /* 1_ Anjali.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F401A87B1E3335090075A076 /* 1_ Anjali.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		F401A8751E3304960075A076 /* SwipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwipeViewController.swift; path = ../SwipeViewController.swift; sourceTree = "<group>"; };
 		F401A8771E3315E20075A076 /* Tutorial.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Tutorial.storyboard; sourceTree = "<group>"; };
 		F401A8791E332BEF0075A076 /* stock-photo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "stock-photo.jpg"; path = "Resources/stock-photo.jpg"; sourceTree = "<group>"; };
+		F401A87B1E3335090075A076 /* 1_ Anjali.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "1_ Anjali.jpg"; path = "../ParseStarterProject/1_ Anjali.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 		814C3AC51B69877600E307BB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F401A87B1E3335090075A076 /* 1_ Anjali.jpg */,
 				814C3AC81B69877600E307BB /* Images.xcassets */,
 				814C3AC91B69877600E307BB /* Info.plist */,
 			);
@@ -189,6 +192,7 @@
 				F401A8721E3300470075A076 /* Swipe.storyboard in Resources */,
 				F401A8781E3315E30075A076 /* Tutorial.storyboard in Resources */,
 				F401A87A1E332BEF0075A076 /* stock-photo.jpg in Resources */,
+				F401A87C1E3335090075A076 /* 1_ Anjali.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

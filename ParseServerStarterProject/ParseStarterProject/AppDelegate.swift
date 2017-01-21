@@ -31,7 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let parseConfiguration = ParseClientConfiguration(block: { (ParseMutableClientConfiguration) -> Void in
             ParseMutableClientConfiguration.applicationId = "myappid"
             ParseMutableClientConfiguration.clientKey = "mymasterkey"
-            ParseMutableClientConfiguration.server = "ec2-54-144-234-55.compute-1.amazonaws.com/parse"
+            ParseMutableClientConfiguration.server = "http://ec2-54-144-234-55.compute-1.amazonaws.com/parse"
         })
         
         Parse.initialize(with: parseConfiguration)
