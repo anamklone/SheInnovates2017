@@ -4,45 +4,56 @@ DEMO
 
 Hello everyone, our names our Shree, Ana$ta$ia "White Privilege" Klonow$ki, and Mansi, and, in accordance with the University of Pittsburgh's Year of Diversity, we would like to introduce our app [ENTER APP NAME HERE]. 
 
-[ENTER APP NAME HERE] is focused on educating users, like you, about the lives of other people. Take Kyle here for example. Kyle is a 20 year old Caucasian, heterosexual college student who lives in America. --> Shows picture of generic white boy on the screen.
+[ENTER APP NAME HERE] is focused on educating users, like you, about the lives of other people. Take Nick here for example. Nick is a 17 year old Caucasian, heterosexual highschool student who lives in America. --> Shows picture of Nick on the screen.
 
 ----------FOLLOW ALONG ON SCREEN----------
-In the login screen, Kyle would click the "New User" button, and enter in his Age, Ethnicity, Gender, Orientation, and Country where he lives. He would then see that he got the character...Anjali, a high school student! Now some of you may be wondering, why did Kyle get Anjali as his character and not someone that resembles him?
+In the login screen, Nick would click the "New User" button, and enter in his Age, Ethnicity, Gender, Orientation, and Country where he lives. He would then see that he got the character...Anjali, a high school student! Now some of you may be wondering, why did Nick get Anjali as his character and not someone that resembles him?
 
 That is because [ENTER APP NAME HERE] is focused on educating you about the lives of other people through putting you in those people's shoes.
 
-Kyle would then click the "Next" button, which would lead him to the instruction screen, where he can see that he will get the opportunity to live a day in the life of Anjali, answering Yes or No questions to progress through the story and swiping Right for Yes and Left for No.
+Nick would then click the "Next" button, which would lead him to the instruction screen, where he can see that he will get the opportunity to live a day in the life of Anjali, answering Yes or No questions to progress through the story and swiping Right for Yes and Left for No.
 
 Now, we're going to see Anastasia (OR MANSI) go through the story.
 
 ----------ANJALI'S STORY----------
 
-1. Anjali woke up from her bed in Chennai, India.                       --> Would you like to go to school today?     YES
-2. Anjali got ready for school. As she's packing her backpack,          --> Do you put on the skin bleaching cream?   NO
+1. Anjali woke up from her bed in Chennai, India. Today is Diwali,      --> Do you go to temple today?                  YES
+   the festival of lights. "Anjali, it's time to go to the temple!"
+   Anjali hears he mom say. 
+2. At the temple, you hear your mom praying for your good health,       --> Would you like to go to school today?       YES
+   good grades, and successful and happy future. Your father is
+   praying for your happiness and health as well. You then go home.
+3. Anjali got ready for school. As she's packing her backpack,          --> Do you put on the skin bleaching cream?     NO
    she hears her mother yelling, "ANJALI! REMEMBER TO PUT ON 
    FAIR AND LOVELY! How are you going to find a husband if your
    skin is not light?"
-3. Anjali goes to school and see's her friend Roja. "Hey Anjali,"       --> Would you like to pursue a major in       NO
+4. Anjali goes to school and see's her friend Roja. "Hey Anjali,"       --> Would you like to pursue a major in         NO
    Roja says. "So, do you know you want to do in college yet?               college that you don't like to please
    I've decided to become a doctor." "I thought you wanted to               your parents?
    become an artist?" Anjali says. "Yeah, but my parents don't
    consider artists to be successfull..."
-4. "Wow, so you're not going to be an engineer? Even though your        --> Do you tell your parents about what you   YES
+5. "Wow, so you're not going to be an engineer? Even though your        --> Do you tell your parents about what you     YES
    parents want you to be one?" Roja asks. "No, I'm going to be             want to be?
    a writer," says Anjali. "And I'm going to tell them that today!"
-5. "You want to be a writer and not a doctor? How do you expect         --> Do you still want to be a writer?         YES
+6. On your way home from school, you pass a vendor selling              --> Do you spend your money on fireworks?       YES
+   fireworks. You were saving some money to buy a new book, but
+   the fireworks would be great for Diwali.
+7. You go home, light the fireworks, and celebrate Diwali with          --> Do you tell your parents what you want      YES
+   family, neighbors, and friends. When the celebrations are                to study in college?
+   over, you go back home to rest with your parents.
+8. "You want to be a writer and not a doctor? How do you expect         --> Do you still want to be a writer?           YES
    to pay the bills? How do you expect to take care of us when 
    we're old? How do you expect to get a good job in America?"
    yells your mother.
-6. "You're father rides a bicycle to work so that we could spend        --> Do you still wan to be a writer?          YES
+9. "You're father rides a bicycle to work so that we could spend        --> Do you still want to be a writer?           YES
    the money on a motorcycle on your engineering tuition instead!
    He has given up so much for you, and you are just throwing it
    away!"
-7. "And I see that you haven't used Fair & Lovely! How do you           --> Do you want to put on the skin bleaching  NO
+10. "And I see that you haven't used Fair & Lovely! How do you           --> Do you want to put on the skin bleaching   NO
    expect to find a nice husband that will take care of you and             cream?
    provide money for your future family if you don't look like
    the best version of yourself?"
-8. Your mother goes off into her room, asking herself what she has      --> Do you apologize and promise to be an     NO
+11. Your mother goes off into her room, asking herself what she has      --> Do you apologize and promise to be an      NO
    done to deserve a daughter like this. Your father looks                  engineer and use the cream?
    disappointed in you. You have never seen your father look this
    disappointed before.
@@ -53,18 +64,18 @@ As you can see, the goal of the app isn't to see if you make the most moral deci
 
    ****Answer the question****
    
-9. Anjali goes to sleep crying. She has never seen her parents this     --> Do you rescind your previous choices?     NO
+12. Anjali goes to sleep crying. She has never seen her parents this     --> Do you rescind your previous choices?      NO
    distraught before.     
    
    End of Story Screen --> Go back to Main Menu? --> YES
 
 ----------BACK TO PRESENTATION----------
 
-In order to build this app, we utilized Swift iOS coding, Parse, and Amazon Web Services to store the usernames and passwords of the app users, as can be seen here --> shows on the screen the Parse AWS page and the various usernames and passwords
+In order to build this app, we utilized Swift iOS coding, Parse, and Amazon Web Services to store the usernames and passwords of the app users and their information, as can be seen here --> shows on the screen the Parse AWS page and the various usernames and passwords and information. Furthermore, as you can see on the Main Menu page, we give people the option to submit their own story about themselves, which is also stored on our database, and which we can use to create new characters that accurately depict what life was like for someone of a different culture. 
 
 Throughout the construction of the app, we made sure to get User Input, as can be seen from this video of a user testing the app --> Has short clip of someone trying the app and offering advice
 
-And using the advice, we fixed the issues with the app that the user found. We also conducted a survey on how many people would use the app if it was available on the Apple App Store, and (THIS MANY PEOPLE WOULD USE IT), which shows that people truly believe that this app concept could truly educate people on the lives of other's, encouraging diversity and open minds.
+And using the advice, we fixed the issues with the app that the user found. We also conducted a survey on how many people would use the app if it was available on the Apple App Store, and (THIS MANY PEOPLE WOULD USE IT), which shows that people truly believe that this app concept could educate people on the lives of other's, encouraging diversity and broadening minds.
 
 Although Anjali's story is the only fully completed storyline in the app, she is not the only character we have created [SHOWS LIST OF CHARACTERS WE HAVE CREATED] and we hope to continue working on this project past SheInnovates and add storylines for each of these characters!
 
