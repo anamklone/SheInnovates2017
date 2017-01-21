@@ -53,5 +53,9 @@ class SwipeViewController: UIViewController {
             imageView.transform = stretchAndRotation
         }
     }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
 
 }
