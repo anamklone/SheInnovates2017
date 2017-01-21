@@ -20,6 +20,7 @@
 		F401A8721E3300470075A076 /* Swipe.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F401A8711E3300470075A076 /* Swipe.storyboard */; };
 		F401A8761E3304960075A076 /* SwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F401A8751E3304960075A076 /* SwipeViewController.swift */; };
 		F401A8781E3315E30075A076 /* Tutorial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F401A8771E3315E20075A076 /* Tutorial.storyboard */; };
+		F401A87A1E332BEF0075A076 /* stock-photo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F401A8791E332BEF0075A076 /* stock-photo.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		F401A8711E3300470075A076 /* Swipe.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Swipe.storyboard; path = ../Swipe.storyboard; sourceTree = "<group>"; };
 		F401A8751E3304960075A076 /* SwipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwipeViewController.swift; path = ../SwipeViewController.swift; sourceTree = "<group>"; };
 		F401A8771E3315E20075A076 /* Tutorial.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Tutorial.storyboard; sourceTree = "<group>"; };
+		F401A8791E332BEF0075A076 /* stock-photo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "stock-photo.jpg"; path = "Resources/stock-photo.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 		81BA813C1A49DA1800E65899 = {
 			isa = PBXGroup;
 			children = (
+				F401A8791E332BEF0075A076 /* stock-photo.jpg */,
 				81BA81471A49DA1800E65899 /* ParseStarterProject */,
 				814C3AC51B69877600E307BB /* Resources */,
 				81BA816A1A49DB5600E65899 /* Frameworks */,
@@ -185,6 +188,7 @@
 				814C3ACB1B69877600E307BB /* Images.xcassets in Resources */,
 				F401A8721E3300470075A076 /* Swipe.storyboard in Resources */,
 				F401A8781E3315E30075A076 /* Tutorial.storyboard in Resources */,
+				F401A87A1E332BEF0075A076 /* stock-photo.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

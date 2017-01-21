@@ -55,8 +55,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         defaultACL.getPublicReadAccess = true
 
         PFACL.setDefault(defaultACL, withAccessForCurrentUser: true)
-
         if application.applicationState != UIApplicationState.background {
+        /*
             // Track an app open here if we launch with a push, unless
             // "content_available" was used to trigger a background push (introduced in iOS 7).
             // In that case, we skip tracking here to avoid double counting the app-open.
@@ -70,7 +70,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             if (preBackgroundPush || oldPushHandlerOnly || noPushPayload) {
                 PFAnalytics.trackAppOpened(launchOptions: launchOptions)
             }
- 
+             */
         }
 
         //
@@ -121,15 +121,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
 
-    @nonobjc func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: NSError) {
+    func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: NSError) {
         if error.code == 3010 {
             print("Push notifications are not supported in the iOS Simulator.\n")
         } else {
             print("application:didFailToRegisterForRemoteNotificationsWithError: %@\n", error)
         }
     }
-
-    @nonobjc func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject]) {
+        
+    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject]) {
         PFPush.handle(userInfo)
         if application.applicationState == UIApplicationState.inactive {
             PFAnalytics.trackAppOpened(withRemoteNotificationPayload: userInfo)

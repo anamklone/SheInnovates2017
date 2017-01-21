@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="stock-photo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="VMz-7B-ohq">
+                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="stock-photo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="VMz-7B-ohq">
                                 <frame key="frameInset" minX="12" minY="144" width="354" height="367"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -32,6 +32,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="stock-photo.jpg" width="16" height="16"/>
+        <image name="stock-photo.jpg" width="1500" height="1000"/>
     </resources>
 </document>
