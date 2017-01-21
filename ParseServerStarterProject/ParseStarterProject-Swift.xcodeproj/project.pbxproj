@@ -22,6 +22,11 @@
 		F401A8781E3315E30075A076 /* Tutorial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F401A8771E3315E20075A076 /* Tutorial.storyboard */; };
 		F401A87A1E332BEF0075A076 /* stock-photo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F401A8791E332BEF0075A076 /* stock-photo.jpg */; };
 		F401A87C1E3335090075A076 /* 1_ Anjali.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F401A87B1E3335090075A076 /* 1_ Anjali.jpg */; };
+		F401A8811E3365590075A076 /* 2_Anjali.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F401A87D1E3365590075A076 /* 2_Anjali.jpg */; };
+		F401A8821E3365590075A076 /* 3_Anjali.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F401A87E1E3365590075A076 /* 3_Anjali.jpg */; };
+		F401A8831E3365590075A076 /* 4_Anjali.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F401A87F1E3365590075A076 /* 4_Anjali.jpg */; };
+		F401A8841E3365590075A076 /* 5_Anjali.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F401A8801E3365590075A076 /* 5_Anjali.jpg */; };
+		F401A8861E33C0B00075A076 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F401A8851E33C0B00075A076 /* TutorialViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,7 +48,12 @@
 		F401A8751E3304960075A076 /* SwipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwipeViewController.swift; path = ../SwipeViewController.swift; sourceTree = "<group>"; };
 		F401A8771E3315E20075A076 /* Tutorial.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Tutorial.storyboard; sourceTree = "<group>"; };
 		F401A8791E332BEF0075A076 /* stock-photo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "stock-photo.jpg"; path = "Resources/stock-photo.jpg"; sourceTree = "<group>"; };
-		F401A87B1E3335090075A076 /* 1_ Anjali.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "1_ Anjali.jpg"; path = "../ParseStarterProject/1_ Anjali.jpg"; sourceTree = "<group>"; };
+		F401A87B1E3335090075A076 /* 1_ Anjali.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "1_ Anjali.jpg"; sourceTree = "<group>"; };
+		F401A87D1E3365590075A076 /* 2_Anjali.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2_Anjali.jpg; sourceTree = "<group>"; };
+		F401A87E1E3365590075A076 /* 3_Anjali.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3_Anjali.jpg; sourceTree = "<group>"; };
+		F401A87F1E3365590075A076 /* 4_Anjali.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4_Anjali.jpg; sourceTree = "<group>"; };
+		F401A8801E3365590075A076 /* 5_Anjali.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5_Anjali.jpg; sourceTree = "<group>"; };
+		F401A8851E33C0B00075A076 /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +76,6 @@
 		814C3AC51B69877600E307BB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				F401A87B1E3335090075A076 /* 1_ Anjali.jpg */,
 				814C3AC81B69877600E307BB /* Images.xcassets */,
 				814C3AC91B69877600E307BB /* Info.plist */,
 			);
@@ -95,12 +104,18 @@
 		81BA81471A49DA1800E65899 /* ParseStarterProject */ = {
 			isa = PBXGroup;
 			children = (
+				F401A87B1E3335090075A076 /* 1_ Anjali.jpg */,
+				F401A87D1E3365590075A076 /* 2_Anjali.jpg */,
+				F401A87E1E3365590075A076 /* 3_Anjali.jpg */,
+				F401A87F1E3365590075A076 /* 4_Anjali.jpg */,
+				F401A8801E3365590075A076 /* 5_Anjali.jpg */,
 				F401A8751E3304960075A076 /* SwipeViewController.swift */,
 				81BA814A1A49DA1800E65899 /* AppDelegate.swift */,
 				81BA814C1A49DA1800E65899 /* ViewController.swift */,
 				814C3AC61B69877600E307BB /* Main.storyboard */,
 				F401A8711E3300470075A076 /* Swipe.storyboard */,
 				F401A8771E3315E20075A076 /* Tutorial.storyboard */,
+				F401A8851E33C0B00075A076 /* TutorialViewController.swift */,
 			);
 			path = ParseStarterProject;
 			sourceTree = "<group>";
@@ -191,6 +206,10 @@
 				814C3ACB1B69877600E307BB /* Images.xcassets in Resources */,
 				F401A8721E3300470075A076 /* Swipe.storyboard in Resources */,
 				F401A8781E3315E30075A076 /* Tutorial.storyboard in Resources */,
+				F401A8841E3365590075A076 /* 5_Anjali.jpg in Resources */,
+				F401A8831E3365590075A076 /* 4_Anjali.jpg in Resources */,
+				F401A8821E3365590075A076 /* 3_Anjali.jpg in Resources */,
+				F401A8811E3365590075A076 /* 2_Anjali.jpg in Resources */,
 				F401A87A1E332BEF0075A076 /* stock-photo.jpg in Resources */,
 				F401A87C1E3335090075A076 /* 1_ Anjali.jpg in Resources */,
 			);
@@ -205,6 +224,7 @@
 			files = (
 				81BA814D1A49DA1800E65899 /* ViewController.swift in Sources */,
 				81BA814B1A49DA1800E65899 /* AppDelegate.swift in Sources */,
+				F401A8861E33C0B00075A076 /* TutorialViewController.swift in Sources */,
 				F401A8761E3304960075A076 /* SwipeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
