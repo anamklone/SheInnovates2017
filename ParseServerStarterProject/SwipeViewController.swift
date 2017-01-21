@@ -59,7 +59,7 @@ class SwipeViewController: UIViewController {
         
         let xFromCenter = imageView.center.x - self.view.bounds.width / 2
         
-        var rotation = CGAffineTransform(rotationAngle: xFromCenter / 100)
+        var rotation = CGAffineTransform(rotationAngle: xFromCenter / 1000)
         
         let scale = min(abs(100 / xFromCenter), 1)
         
@@ -91,7 +91,7 @@ class SwipeViewController: UIViewController {
     func goToNext() {
         count = count + 1
         
-        if count < pageInfo.count - 1 {
+        if count < pageInfo.count {
         
             let currentImage = UIImage(named: pageInfo[count][0])
         
@@ -101,7 +101,7 @@ class SwipeViewController: UIViewController {
         
             questionLabel.text = pageInfo[count][2]
         } else {
-            //goToEnd()
+            
         }
     }
     

@@ -47,30 +47,11 @@
                         <outlet property="imageView" destination="VMz-7B-ohq" id="xEb-9a-IJt"/>
                         <outlet property="questionLabel" destination="K83-lO-hp2" id="Lka-x2-kgI"/>
                         <outlet property="textLabel" destination="eIm-TP-Smi" id="jw0-jD-uYc"/>
-                        <segue destination="lLm-um-mDT" kind="show" identifier="goToEnd" id="llH-dm-amh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G20-ff-hsU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-178.40000000000001" y="95.802098950524751"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="ETk-BI-q7y">
-            <objects>
-                <viewController id="lLm-um-mDT" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="XPn-Q1-yrX"/>
-                        <viewControllerLayoutGuide type="bottom" id="CpR-Jx-VTO"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="dPs-JR-Jra">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PDq-X8-dHS" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="647" y="96"/>
         </scene>
     </scenes>
     <resources>

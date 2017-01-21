@@ -1,41 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="dhk-dM-zjQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ivX-to-0wB">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
-        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Tutorial View Controller-->
-        <scene sceneID="4Ub-Wx-4FX">
+        <!--Page View Controller-->
+        <scene sceneID="Sp3-dN-YGd">
             <objects>
-                <viewController id="dhk-dM-zjQ" customClass="TutorialViewController" customModule="ParseStarterProject_Swift" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="1dp-At-A2e"/>
-                        <viewControllerLayoutGuide type="bottom" id="F9K-Bn-Mlf"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Ssn-cP-1uu">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1_ Anjali.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ILB-8h-kc0">
-                                <frame key="frameInset" minX="67" minY="167" width="240" height="266"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" hidesForSinglePage="YES" numberOfPages="2" currentPage="1" translatesAutoresizingMaskIntoConstraints="NO" id="2ui-Rb-m0n">
-                                <frame key="frameInset" minX="168" minY="441" width="39" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </pageControl>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="doA-y4-836" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="ivX-to-0wB" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rLs-SX-img" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-106.40000000000001" y="154.27286356821591"/>
+            <point key="canvasLocation" x="-7" y="134"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="1_ Anjali.jpg" width="700" height="1000"/>
-    </resources>
 </document>

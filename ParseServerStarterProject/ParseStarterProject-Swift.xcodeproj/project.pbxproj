@@ -27,6 +27,8 @@
 		F401A8831E3365590075A076 /* 4_Anjali.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F401A87F1E3365590075A076 /* 4_Anjali.jpg */; };
 		F401A8841E3365590075A076 /* 5_Anjali.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F401A8801E3365590075A076 /* 5_Anjali.jpg */; };
 		F401A8861E33C0B00075A076 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F401A8851E33C0B00075A076 /* TutorialViewController.swift */; };
+		F401A8891E33C4470075A076 /* 6_Anjali.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F401A8871E33C4470075A076 /* 6_Anjali.jpg */; };
+		F401A88A1E33C4470075A076 /* 7_Anjali.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F401A8881E33C4470075A076 /* 7_Anjali.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +56,8 @@
 		F401A87F1E3365590075A076 /* 4_Anjali.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4_Anjali.jpg; sourceTree = "<group>"; };
 		F401A8801E3365590075A076 /* 5_Anjali.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5_Anjali.jpg; sourceTree = "<group>"; };
 		F401A8851E33C0B00075A076 /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
+		F401A8871E33C4470075A076 /* 6_Anjali.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6_Anjali.jpg; sourceTree = "<group>"; };
+		F401A8881E33C4470075A076 /* 7_Anjali.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7_Anjali.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 				F401A87E1E3365590075A076 /* 3_Anjali.jpg */,
 				F401A87F1E3365590075A076 /* 4_Anjali.jpg */,
 				F401A8801E3365590075A076 /* 5_Anjali.jpg */,
+				F401A8871E33C4470075A076 /* 6_Anjali.jpg */,
+				F401A8881E33C4470075A076 /* 7_Anjali.jpg */,
 				F401A8751E3304960075A076 /* SwipeViewController.swift */,
 				81BA814A1A49DA1800E65899 /* AppDelegate.swift */,
 				81BA814C1A49DA1800E65899 /* ViewController.swift */,
@@ -202,6 +208,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F401A88A1E33C4470075A076 /* 7_Anjali.jpg in Resources */,
 				814C3ACA1B69877600E307BB /* Main.storyboard in Resources */,
 				814C3ACB1B69877600E307BB /* Images.xcassets in Resources */,
 				F401A8721E3300470075A076 /* Swipe.storyboard in Resources */,
@@ -212,6 +219,7 @@
 				F401A8811E3365590075A076 /* 2_Anjali.jpg in Resources */,
 				F401A87A1E332BEF0075A076 /* stock-photo.jpg in Resources */,
 				F401A87C1E3335090075A076 /* 1_ Anjali.jpg in Resources */,
+				F401A8891E33C4470075A076 /* 6_Anjali.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
