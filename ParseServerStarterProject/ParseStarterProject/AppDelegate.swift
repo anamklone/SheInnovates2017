@@ -39,7 +39,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         // ****************************************************************************
         // Uncomment and fill in with your Parse credentials:
-        // Parse.setApplicationId("myappid", clientKey: "mymasterkey")
+        // Parse.setApplicationId("your_application_id", clientKey: "your_client_key")
         //
         // If you are using Facebook, uncomment and add your FacebookAppID to your bundle's plist as
         // described here: https://developers.facebook.com/docs/getting-started/facebook-sdk-for-ios/
@@ -47,7 +47,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // PFFacebookUtils.initializeFacebook()
         // ****************************************************************************
 
-        // PFUser.enableAutomaticUser()
+        PFUser.enableAutomaticUser()
 
         let defaultACL = PFACL();
 
@@ -55,12 +55,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         defaultACL.getPublicReadAccess = true
 
         PFACL.setDefault(defaultACL, withAccessForCurrentUser: true)
+
         if application.applicationState != UIApplicationState.background {
-        /*
             // Track an app open here if we launch with a push, unless
             // "content_available" was used to trigger a background push (introduced in iOS 7).
             // In that case, we skip tracking here to avoid double counting the app-open.
-            
+            /*
             let preBackgroundPush = !application.responds(to: #selector(getter: UIApplication.backgroundRefreshStatus))
             let oldPushHandlerOnly = !self.responds(to: #selector(UIApplicationDelegate.application(_:didReceiveRemoteNotification:fetchCompletionHandler:)))
             var noPushPayload = false;
@@ -70,7 +70,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             if (preBackgroundPush || oldPushHandlerOnly || noPushPayload) {
                 PFAnalytics.trackAppOpened(launchOptions: launchOptions)
             }
-             */
+ */
         }
 
         //
@@ -128,7 +128,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             print("application:didFailToRegisterForRemoteNotificationsWithError: %@\n", error)
         }
     }
-        
+
     func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject]) {
         PFPush.handle(userInfo)
         if application.applicationState == UIApplicationState.inactive {

@@ -9,166 +9,108 @@
 
 import UIKit
 import Parse
+import Bolts
 
 class ViewController: UIViewController {
     
-    var activityIndicator = UIActivityIndicatorView()
-
+    var signupMode = true
+    
+    @IBOutlet var errorLabel: UILabel!
     @IBOutlet var usernameField: UITextField!
     @IBOutlet var passwordField: UITextField!
-    @IBOutlet var logInButton: UIButton!
-    @IBOutlet var signUpButton: UIButton!
-    @IBOutlet var accountLabel: UILabel!
-    
-    var logInPosition = CGPoint()
-    
-    var signUpMode = true;
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        logInPosition = CGPoint(x: logInButton.center.x, y: logInButton.center.y)
-        
-        // Do any additional setup after loading the view, typically from a nib.
-        
-        let testObject = PFObject(className: "TestObject2")
-        
-        testObject["foo"] = "bar"
-        
-        testObject.saveInBackground { (success, error) -> Void in
-            
-            // added test for success 11th July 2016
-            
-            if success {
-                
-                print("Object has been saved.")
-                
-            } else {
-                
-                if error != nil {
-                    
-                    print (error)
-                    
-                } else {
-                    
-                    print ("Error")
-                }
-                
-            }
-            
-        }
-        
-    }
+    @IBOutlet var signupOrLoginButton: UIButton!
+    @IBOutlet var changeSingupModeButton: UIButton!
 
-    @IBAction func logIn(_ sender: AnyObject) {
+    
+    @IBAction func signupOrLogin(_ sender: AnyObject){
         
-        if signUpMode {
+        if signupMode {
             
-            logInButton.center.x = signUpButton.center.x
-            logInButton.center.y = signUpButton.center.y
+            let user = PFUser()
             
-            signUpButton.center.y = logInPosition.y
+            user.username = usernameField.text
+            user.password = passwordField.text
             
-            //accountLabel.isHidden = true
-            signUpMode = true
+            let acl = PFACL()
             
-        } else {
+            acl.getPublicWriteAccess = true
             
-            PFUser.logInWithUsername(inBackground: usernameField.text!, password: passwordField.text!, block: { (user, error) in
-                if error != nil {
-                    let error = error as NSError?
+            user.acl = acl
+            
+            user.signUpInBackground { (success, error) in
+                
+                if error != nil{
                     
-                    var errorMessage = "Log in failed"
+                    var errorMessage = "Sing up failed- please try again"
+                    let error = error as! NSError
                     
-                    if let parseError = error?.userInfo["error"] as? String {
+                    if let parseError = error.userInfo["error"] as? String{
                         errorMessage = parseError
                     }
                     
-                    self.createAlert(title: "Log In Error", message: errorMessage)
+                    self.errorLabel.text = errorMessage
+                }else{
                     
-                    print(errorMessage)
+                    print("Signed up")
+                    self.performSegue(withIdentifier: "goToUserInfo", sender: self)
                     
-                } else {
-                    print("Logged in")
                 }
-            })
-            
-        }
-    }
-    
-    @IBAction func signUp(_ sender: AnyObject) {
-        
-        activityIndicator = UIActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
-        activityIndicator.center = self.view.center
-        activityIndicator.hidesWhenStopped = true
-        activityIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray
-        view.addSubview(activityIndicator)
-        activityIndicator.startAnimating()
-        UIApplication.shared.beginIgnoringInteractionEvents()
-        
-        if signUpMode {
-        
-            if usernameField.text != "" || passwordField.text != "" {
-            
-                let user = PFUser()
-            
-                user.username = usernameField.text
-                user.password = passwordField.text
-            
-                user.signUpInBackground( block: { (success, error) in
-                    
-                    self.activityIndicator.stopAnimating()
-                    UIApplication.shared.endIgnoringInteractionEvents()
-                
-                    
-                    if error != nil {
-                        
-                        let error = error as NSError?
-                    
-                        var errorMessage = "Sign up failed"
-                    
-                        if let parseError = error?.userInfo["error"] as? String {
-                            errorMessage = parseError
-                        }
-                        
-                        self.createAlert(title: "Sign Up Error", message: errorMessage)
-                        
-                        print(errorMessage)
-                        
-                    } else {
-                        print("Signed up")
-                    }
- 
-                })
-            } else {
-                
-                self.createAlert(title: "Error!", message: "Please enter a username and password")
             }
-        } else {
+        } else{
             
-            signUpButton.center.x = logInButton.center.x
+            print("are we not sign up mode? ")
             
-            signUpButton.center.y = logInButton.center.y
+         /**   PFUser.logInWithUsername(inBackground: usernameField.text!, password: passwordField.text!, block: { (user,error) in
+                
+                if error != nil {
+                    
+                    var errrorMessage = "Signup failed"
+                    
+                    let error = error as NSError?
+                    
+                    if let parseError = error?.userInfo["error"] as? String {
+                        
+                        errrorMessage = parseError
+                    }
+                    
+                    self.errorLabel.text = errrorMessage
+                    
+                }else{
+                    
+                    print("Logged in")
+                    
+                    self.performSegue(withIdentifier: "gotToUserInfo", sender: self)
+                    
+                }
+                
+                
+            }) */
             
-            logInButton.center.x = logInPosition.x
+            }
             
-            logInButton.center.y = logInPosition.y
-            
-            //accountLabel.isHidden = true
-            
-            signUpMode = false
         }
+
+    override func viewDidAppear(_ animated: Bool){
+     /**   if PFUser.current() != nil{
+            print((PFUser.current()?.username)!)
+            performSegue(withIdentifier: "goToUserInfo", sender: self)
+        } */
+    
+    }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+        
     }
     
-    func createAlert(title: String, message: String) {
-        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
+
+    /**override func viewDidAppear(_ animated: Bool) {
         
-        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action) in
-            self.dismiss(animated: true, completion: nil)
-        }))
-        
-        self.present(alert, animated: true, completion: nil)
-    }
+        if PFUser.current() != nil {
+            performSegue(withIdentifier: "goToUserInfo", sender: self)
+        }
+
+    } */
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
